@@ -151,6 +151,7 @@ module Earthquake
       status =  [
                   "#{mark}" + "[#{id}]".c(:info),
                   "#{item["user"]["screen_name"].c(color_of(item["user"]["screen_name"]))}:",
+                  "\n",
                   "#{text}",
                   (item["user"]["protected"] ? "[P]".c(:notice) : nil),
                   info.join(' - ').c(:info)
